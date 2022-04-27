@@ -1,18 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i;
-    scanf("%d%d",&a,&b);
-    i=a>b?a:b;
+    int a,b,lcm;
+    scanf("%d %d",&a,&b);
+    lcm=(a>b)?(a):(b);
     while(1)
     {
-        if(i%a==0&&i%b==0)
-    {
-        printf("%d",i);
-        break;
-    }
-    i++;
-        
+        if(lcm%a==0 &&lcm%b==0)
+        {
+            printf("%d",lcm);
+            break;
+        }
+        lcm++;
     }
     return 0;
 }
